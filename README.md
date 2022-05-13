@@ -76,7 +76,7 @@ Key | Type | Required | Description
 `origin_entity_id` | `string` | `true` | The entity_id holding the starting point for calculating travel distance and time. Cannot be used in combination with origin_latitude / origin_longitude
 `destination_entity_id` | `string` | `true` | The entity_id holding the finishing point for calculating travel distance and time. Cannot be used in combination with destination_latitude / destination_longitude
 `name` | `string` | `false` | A name to display on the sensor. The default is "HERE Travel Time".
-`mode` | `string` | `false` | You can choose between: `cycling-regular`, `driving-car` or `foot-walking`. The default is `driving-car`.
+`mode` | `string` | `false` | You can choose between: `cycling-regular`, `cycling-road`, `cycling-mountain`, `cycling-electric`, `driving-car`, `driving-hvg`, `foot-walking`, `foot-hiking` or `wheelchair`. The default is `driving-car`.
 `route_mode` | `string` | `false` | You can choose between: `fastest`, or `shortest`. The default is `fastest`
 `unit_system` | `string` | `false` | You can choose between `metric` or `imperial`. Defaults to `metric` or `imperial` based on the Home Assistant configuration.
 `scan_interval` | `integer` | `false` | "Defines the update interval of the sensor in seconds. Defaults to 300 (5 minutes)."
