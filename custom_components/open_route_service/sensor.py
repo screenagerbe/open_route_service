@@ -14,8 +14,8 @@ from homeassistant.const import (
     CONF_MODE,
     CONF_NAME,
     CONF_UNIT_SYSTEM,
-#    US_CUSTOMARY_SYSTEM,
-#    CONF_UNIT_SYSTEM_METRIC,
+    CONF_UNIT_SYSTEM_IMPERIAL,
+    CONF_UNIT_SYSTEM_METRIC,
     EVENT_HOMEASSISTANT_START,
 )
 from homeassistant.core import HomeAssistant, State, callback
@@ -73,7 +73,7 @@ ICON_PEDESTRIAN = "mdi:walk"
 ICON_HIKING = "mdi:hiking"
 ICON_WHEELCHAIR = "mdi:wheelchair-accessibility"
 
-#UNITS = [CONF_UNIT_SYSTEM_METRIC, CONF_UNIT_SYSTEM_IMPERIAL]
+UNITS = [CONF_UNIT_SYSTEM_METRIC, CONF_UNIT_SYSTEM_IMPERIAL]
 
 ATTR_DURATION = "duration"
 ATTR_DISTANCE = "distance"
@@ -385,7 +385,7 @@ class OpenRouteTravelTimeData:
                 if "duration" in summary:
                     self.duration = summary["duration"]
                     distance = summary["distance"]
-                    if self.units == US_CUSTOMARY_SYSTEM:
+                    if self.units == CONF_UNIT_SYSTEM_IMPERIAL:
                         # Convert to miles.
                         self.distance = distance / 1609.344
                     else:
