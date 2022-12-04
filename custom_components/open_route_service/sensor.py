@@ -14,8 +14,8 @@ from homeassistant.const import (
     CONF_MODE,
     CONF_NAME,
     CONF_UNIT_SYSTEM,
-    CONF_UNIT_SYSTEM_IMPERIAL,
-    CONF_UNIT_SYSTEM_METRIC,
+#    US_CUSTOMARY_SYSTEM,
+#    CONF_UNIT_SYSTEM_METRIC,
     EVENT_HOMEASSISTANT_START,
 )
 from homeassistant.core import HomeAssistant, State, callback
