@@ -385,7 +385,7 @@ class OpenRouteTravelTimeData:
                 if "duration" in summary:
                     self.duration = summary["duration"]
                     distance = summary["distance"]
-                    if self.units == CONF_UNIT_SYSTEM_IMPERIAL:
+                    if self.units == US_CUSTOMARY_SYSTEM:
                         # Convert to miles.
                         self.distance = distance / 1609.344
                     else:
