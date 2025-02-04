@@ -1,5 +1,9 @@
 # open_route_service
 
+## !!!! DISCONTINUED !!!!
+
+because main project is no longer maintained
+
 [![GitHub Release][releases-shield]][releases]
 [![GitHub Activity][commits-shield]][commits]
 [![hacs][hacsbadge]][hacs]
